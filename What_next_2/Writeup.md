@@ -29,7 +29,7 @@ print(f'enc = {enc}')`
 ```
 ## The Vulnerability
 
-If the numbers were truly random, then it wouldn't have been possible to crack. But in python, the random module generates pseudo-random numbers using algorithms. The algorithms use a starting point called a seed, and from that seed, a sequence of numbers is produced. If you provide the same seed, you'll get the same sequence of numbers.
+If the numbers were truly random, then the challenge would be much harder. But in python, the random module generates pseudo-random numbers using algorithms. The algorithms use a starting point called a seed, and from that seed, a sequence of numbers is produced. If you provide the same seed, you'll get the same sequence of numbers.
 Mersenne Twiser is an algorithm that uses Mersenne Primes (2^n - 1) to create numbers that are statistically random and approved however they are not cryptographically secure.
 
 ## The Solution
